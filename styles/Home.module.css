@@ -1,50 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
 
 .container {
-  padding: 0 2rem;
-  display: flex;
-  flex-direction: column;
-  background-color: #282c34;
-  height: auto;
-  min-height: 100vh;
-  align-items: center;
-  color: #695CFE;
-  font-family: 'Poppins', sans-serif;
+  @apply flex flex-col py-0 px-8 h-auto min-h-screen items-center text-white font-sans bg-[#F2EDE7];
 }
 
 .title {
-  padding: 10px;
-  padding-inline: 50px;
-  border-radius: 5px;
-  background-color: rgb(242, 237, 231);
+  @apply m-2.5 p-2.5 rounded bg-[#282c34];
 }
 
 .mintNFT {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: rgb(242, 237, 231);
-  border-radius: 5px;
-  color: #695CFE;
+  @apply mt-5 p-5 bg-[#282c34] rounded text-[#695CFE];
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @apply flex flex-col flex-wrap justify-center;
 }
 
-
 .listNFT {
-  display: flex;
-  margin-top: 30px;
+  @apply flex flex-row flex-wrap justify-evenly m-8;
 }
 
 .nft {
-  border: 1px solid black;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 20px;
-  text-align: center;
-  background-color: rgb(242, 237, 231);
+  @apply border border-solid border-black rounded p-2.5 m-5 text-center bg-[#F2EDE7];
+}
+
+.inputs {
+  @apply block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+}
+
+.buttons {
+  @apply px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out;
+}
+
+.labels {
+  @apply inline-block mb-2 text-base text-lime-400;
 }
